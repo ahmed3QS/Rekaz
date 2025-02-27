@@ -1,6 +1,4 @@
-const cypress = require("cypress");
 
-    
   it('الرابط', () => {
     cy.visit('https://platform.rekaz.dev/');
 
@@ -16,7 +14,7 @@ const cypress = require("cypress");
 
     cy.wait(1000);
 
-    cy.get('#CouponModel_Code').type('Test');
+    cy.get('#CouponModel_Code').type('TestRekaz');
     cy.get('.mb-5 > .select2 > .selection > .select2-selection > .select2-selection__rendered > .select2-search > .select2-search__field').should('be.visible').click();
     cy.get('[role="group"] > .select2-results__options > .select2-results__option').should('be.visible').click();
     cy.get('.row > :nth-child(1) > .btn').click();
